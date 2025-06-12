@@ -27,3 +27,60 @@ project_root/
     ├── settings.py
     ├── urls.py
     └── wsgi.py
+
+
+🚀 How to Use
+▶️ Login & Register
+Visit /login/ to sign in with your account.
+
+Visit /register/ to create a new account (if included).
+
+Logout using /logout/.
+
+🧑 Admin Panel
+Go to /admin/ and log in using the superuser credentials.
+
+From here you can manage users and any models you’ve added.
+
+🛠 Customizing the App
+Add a model: define it in myapp/models.py, then run:
+
+bash
+Copy
+Edit
+python manage.py makemigrations
+python manage.py migrate
+Create a view: add logic in myapp/views.py and route it in myapp/urls.py.
+
+Create a template: put your .html files in myapp/templates/, and render them from the view using:
+
+python
+Copy
+Edit
+return render(request, 'my_template.html', context)
+Style your app: use static files in a static/ directory (add STATICFILES_DIRS to settings if needed).
+
+✨ Features
+✅ Django’s built-in authentication system
+
+✅ Admin panel included
+
+✅ Default SQLite DB (zero config)
+
+✅ Uses MVT architecture
+
+✅ Ready for customization
+
+🧪 Testing
+Run tests with:
+
+bash
+Copy
+Edit
+python manage.py test
+📦 Requirements
+Python 3.8+
+
+Django 4.x
+
+SQLite (included by default)
