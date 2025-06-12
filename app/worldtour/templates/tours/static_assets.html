@@ -1,0 +1,17 @@
+{% load static %}
+<!-- This is a Django template that uses the static files feature -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asset Static</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
+    <script src="{% static 'js/script.js' %}"></script>
+  </head>
+  <body>
+    <h1>Static Assets</h1>
+
+    <img src="{% static 'images/django1.jpg' %}" alt="Logo" />
+  </body>
+</html>
